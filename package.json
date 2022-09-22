@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx wdio run wdio.conf.js "
   },
   "keywords": [],
   "author": "",
@@ -17,5 +17,9 @@
     "chai": "^4.3.6",
     "chromedriver": "^105.0.1",
     "wdio-chromedriver-service": "^7.3.2"
+  },
+  "dependencies": {
+    "jasmine": "^4.4.0",
+    "jasmine-reporters": "^2.5.0"
   }
 }
