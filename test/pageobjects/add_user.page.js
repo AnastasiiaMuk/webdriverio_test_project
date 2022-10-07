@@ -39,7 +39,7 @@ class AddUserPage extends Page {
         await this.input(blockTitle).setValue(text);
     }
 
-    async save () {
+    async saveUser () {
         await browser.pause(2000);
         await this.buttonSave.click();
     }

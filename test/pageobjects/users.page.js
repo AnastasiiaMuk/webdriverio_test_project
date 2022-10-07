@@ -67,7 +67,7 @@ class UsersPage extends Page {
     await this.checkCellValueInUserTable(user, 5, status);
   }
 
-  async open() {
+  async openDropdown() {
     await this.adminSection.click();
     await this.btnUserManagement.click();
     await this.btnUsers.click();
@@ -77,7 +77,7 @@ class UsersPage extends Page {
     await this.btnAddUser.click();
   }
 
-  async search(user) {
+  async searchUser(user) {
     await this.usernameSearch.setValue(user);
     await this.btnSearch.click();
   }
@@ -86,16 +86,16 @@ class UsersPage extends Page {
     await this.btnReset.click();
   }
 
-  async selectCheckbox(user) {
+  async selectUserCheckbox(user) {
     await this.checkbox(user).click();
   }
 
-  async deleteSelected() {
+  async deleteSelectedUser() {
     await this.btnDelete.click();
     await this.btnConfirmDelete.click();
   }
 
-  async confirmDeletion(user) {
+  async confirmUserDeletion(user) {
     await expect(this.userCell(user)).not.toExist();
   }
 }
