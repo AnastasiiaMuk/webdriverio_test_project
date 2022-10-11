@@ -9,3 +9,8 @@ JS automation tests using WDIO
 1. Open terminal
 2. Navigate to the path the project was cloned in
 3. Run 'npm run test'
+
+## Creat Allure report
+1. Open terminal
+2. Navigate to the path the project was cloned in
+3. Run 'allure generate --clean && allure open'
